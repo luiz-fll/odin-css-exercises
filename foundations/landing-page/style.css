@@ -1,0 +1,208 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Roboto, 'Segoe UI', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #e5e7eb
+}
+
+button {
+    background-color: #3882f6;
+    color: #e5e7eb;
+    font-size: 18px;
+    border: 0;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 128px;
+    height:fit-content;
+    flex: 0 0 auto;
+}
+
+.hero > *,
+.information > *,
+.quote > *,
+.sign-up > *,
+.footer > * {
+    margin: 0 15%;
+}
+
+.hero {
+    background-color: #1f2937;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 128px;
+}
+
+.logo {
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: 900;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-content {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 128px;
+}
+
+.hero-content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    gap: 16px;
+}
+
+.hero-content-text > h1 {
+    font-size: 48px;
+    color:#f9faf8;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-content-text > p {
+    font-size: 18px;
+    color:#e5e7eb;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-content > img {
+    width: 630px;
+    height: 250px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+}
+
+.information > h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+    padding: 48px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+.card > img {
+    height: 150px;
+    width: 150px;
+    border-color: #3882f6;
+    border-radius: 16px;
+    border-style: solid;
+    border-width: 4px;
+}
+
+.card > p {
+    text-align: center;
+    color:#1f2937;
+}
+
+.quote {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 200px;
+}
+
+.quote-content {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.author {
+    text-align: right;
+    color: #1f2937;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.sign-up {
+    display: flex;
+    align-items: center;
+    padding: 96px 0;
+}
+
+.container {
+    background-color: #3882f6;
+    border-radius: 8px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px 128px;
+}
+
+.container > button {
+    border: 2px solid #f9faf8 
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-content > h1 {
+    color: #f9faf8;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.container-content > p {
+    color: #f9faf8;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    background-color: #1f2937;
+    color:#e5e7eb;
+    text-align: center;
+    padding: 32px;
+    font-size: 18px;
+}
