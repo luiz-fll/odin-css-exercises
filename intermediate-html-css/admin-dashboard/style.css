@@ -1,0 +1,280 @@
+@import url(https://rsms.me/inter/inter.css);
+
+:root {
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: minmax(auto-fit, 25vh) auto;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main";
+    min-height: 100vh;
+    background-color: #3e79d1;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    display: grid;
+    grid-template-rows: 2fr 6fr 3fr;
+    grid-template-columns: 1fr;
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    padding: 1rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 4rem;
+}
+
+.logo svg {
+    height: 4rem;
+    fill: white;
+}
+
+.links,
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.nav-item {
+    color: white;
+    fill: white;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.header {
+    background-color: white;
+    grid-area: header;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 6fr 4fr;
+    padding-bottom: 2rem;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 3rem;
+}
+
+svg {
+    height: 2rem;
+}
+
+.searchbar > input {
+    width: 90%;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.4rem 1rem;
+    background-color: #ececec;
+}
+
+.notifications {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 4rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#profile-icon {
+    height: 4rem;
+}
+
+#profile {
+    height: 6rem;
+}
+
+.user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 3rem;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.greeting > :first-child {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.greeting > :last-child {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 3rem;
+    align-items: center;
+    padding-right: 4rem;
+}
+
+.buttons > button {
+    border-radius: 2rem;
+    background-color:#3e79d1;
+    border: none;
+    color: white;
+    padding: 0.9rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: 'Inter';
+    width: 130px;
+}
+
+.content {
+    background-color: #ececec;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: 1fr;
+    overflow: scroll;
+}
+
+.content > * > p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    padding-left: 1rem;
+    padding-top: 2rem;
+}
+
+.main-cards {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: 300px;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 2px 4px 8px 0px #b4b4b4;
+    padding: 3rem 2rem;
+}
+
+.main-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 10px solid #ffb01c
+}
+
+.main-card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-card-text > span:first-child {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.main-card-text > span:last-child {
+    font-size: 1.25rem;
+    color: #747474;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    fill: #2e2e2e
+}
+
+.side-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.announcement {
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    margin: 1rem;
+    color: #b4b4b4
+}
+
+.announcement > span:first-child {
+    font-weight: 700;
+}
+
+.side-cards-container {
+    padding: 1rem;
+    height: clamp(150px, 50%, 500px);
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.trending-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.trending-item > svg {
+    height: 4rem;
+}
+
+.trending-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-text > span:first-child {
+    font-weight: 700;
+}
+
+.trending-text > span:last-child {
+    color: #747474;
+}
